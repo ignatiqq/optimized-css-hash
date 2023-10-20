@@ -2,7 +2,7 @@
 
 ## Usage
 
-You can use it like an **getLocalIdent** option in the 'css-loader'. 
+You can use it like a **getLocalIdent** option in the 'css-loader'. 
 
 ```
 const {createGenerator} = require('optimized-css-hash');

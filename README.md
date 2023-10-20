@@ -1,5 +1,7 @@
 # optimized-css-hash
 
+article idea - https://dev.to/denisx/reduce-bundle-size-via-one-letter-css-classname-hash-strategy-10g6
+
 ## Usage
 
 You can use it like a **getLocalIdent** option in the 'css-loader'. 

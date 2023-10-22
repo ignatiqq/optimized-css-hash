@@ -48,13 +48,10 @@ const createGenerator = ({baseInterpolateName} = {baseInterpolateName: '[hash:ba
             fileShort.ruleNames[localName] = generatedClassname;
         }
 
-        return loaderUtils.interpolateName(
-            loaderContext.context,
-            localIdentName
-                .replace('[local]', localName)
-                .replace('[pathHash]', fileShort.ruleNames[localName]),
-            {content: localName},
-        );
+        return loaderUtils
+            .interpolateName(loaderContext, localIdentName, {content: localName})
+            .replace('[local]', localName)
+            .replace('[pathHash]', fileShort.ruleNames[localName]);
     };
 };
 
